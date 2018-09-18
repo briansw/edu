@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+
+.c {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 15px 50px 15px;
+  background: #ff0;
+}
+
+.c1 { width: 130px; }
+.c2 { width: 290px; }
+.c3 { width: 450px; }
+.c4 { width: 610px; }
+.c5 { width: 770px; }
+.c6 { width: 930px; }
+
+img { width: 100%; }
