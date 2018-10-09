@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 50px;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-family: helvetica;
+}
+
+h1,h2,h3 {
+  font-size: inherit;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+p { margin: 0 0 50px 0; }
+
+ol, li {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
