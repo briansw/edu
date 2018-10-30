@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Lab 5 - JS Interactions</title>
     <link rel="shortcut icon" href="" />
@@ -15,12 +15,12 @@
     <div class="wrapper">
       <div class="column nav">
         <ul>
-          <li data-button="green" class="nav-item">Green</li>
-          <li data-button="blue" class="nav-item">Blue</li>
-          <li data-button="red" class="nav-item">Red</li>
-          <li data-button="sol-lewitt" class="nav-item">Sol LeWitt</li>
-          <li data-button="beyonce" class="nav-item">Beyonce</li>
-          <li data-button="about" class="nav-item">About</li>
+          <li class="nav-item" data-button="green">Green</li>
+          <li class="nav-item" data-button="red">Red</li>
+          <li class="nav-item" data-button="blue">Blue</li>
+          <li class="nav-item" data-button="sol-lewitt">Sol LeWitt</li>
+          <li class="nav-item" data-button="beyonce">Beyonce</li>
+          <li class="nav-item" data-button="about">About</li>
         </ul>
       </div>
       <div class="column content">
@@ -31,13 +31,11 @@
     </div>
 
     <div class="slay hide">
-      <span>Slay</span>
-      <a class="close" href="#">&times;</a>
-      <div class="hide">
-        <audio controls loop>
-          <source src="assets/sound/formation.m4a">
-        </audio>
-      </div>
+      <div class="close">&times;</div>
+      <div class="message">Slay</div>
+      <audio class="hide" controls loop>
+        <source src="assets/sound/formation.m4a" />
+      </audio>
     </div>
 
     <script src="assets/js/app.js"></script>
