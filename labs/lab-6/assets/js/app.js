@@ -1,46 +1,23 @@
-// click nav-item
-// if statement that checks which button was clicked
-// remove hide class from corresponding button
-
 // $('.nav-item').click(function() {
-//   if ($(this).hasClass('apple-button')) {
+//   var target = $(this).html();
+
+//   console.log(target);
+
+//   if (target == 'Apple') {
 //     $('.apple').removeClass('hide');
-//   } else if ($(this).hasClass('nike-button')) {
+//   } else if (target == 'Nike') {
 //     $('.nike').removeClass('hide');
-//   } else if ($(this).hasClass('disney-button')) {
+//   } else if (target == 'Disney') {
 //     $('.disney').removeClass('hide');
-//   } else {
+//   } else if (target == 'Vogue') {
 //     $('.vogue').removeClass('hide');
 //   }
 // });
 
-// $('.nav-item').click(function() {
-//   var target_horse = $(this).data('horse');
-//   $(target_horse).removeClass('hide');
-// });
-
-// $('.nav-item').click(function() {
-//   var target = $(this).data('horse');
-//   var img_to_show;
-
-//   if (target == 'apple') {
-//     img_to_show = '<img class="apple" src="assets/img/apple.png" />';
-//   } else if (target == 'nike') {
-//     img_to_show = '<img class="nike" src="assets/img/nike.png" />';
-//   } else if (target == 'disney') {
-//     img_to_show = '<img class="disney" src="assets/img/disney.png" />';
-//   } else {
-//     img_to_show = '<img class="vogue" src="assets/img/vogue.png" />';
-//   }
-
-//   $('.content').append(img_to_show);
-// });
-
-
 $('.nav-item').click(function() {
   var img         = $(this).data('img');
-  var class_name  = $(this).data('classname');
-  var img_to_show = '<div class="' + class_name + ' logo"><img src="assets/img/' + img + '" /></div>';
+  var classname   = $(this).data('classname');
+  var img_to_show = '<div class="logo ' + classname + '"><img src="assets/img/' + img + '" /></div>';
 
   $('.content').prepend(img_to_show);
 });
