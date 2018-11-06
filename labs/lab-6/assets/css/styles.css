@@ -1,45 +1,69 @@
 * { box-sizing: border-box; }
 
-div { vertical-align: top; }
-
-body { 
+body {
+  margin: 0;
+  padding: 30px;
   font-size: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.wrapper { 
-  width: 100%;
-  margin: 0 auto; 
-  max-width: 1400px;
-}
-
-.c {
-  font-size: 14px;
-  background: #0f0;
-  border-bottom: 2px solid #f00;
+.nav-item {
+  font-size: 20px;
+  border: 1px solid #000;
+  padding: 10px 20px;
   display: inline-block;
-  /* padding: 0 15px 50px 15px; */
-  margin: 0 15px 50px 15px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
 }
 
-.c1 { width: calc(25% - 30px); }
-.c2 { width: calc(50% - 30px); }
-.c3 { width: calc(75% - 30px); }
-.c4 { width: calc(100% - 30px); }
-
-img { width: 100%; }
-
-@media only screen and (max-width: 700px) {
-  .wrapper { max-width: 500px; }
-
-  .c { 
-    background: #ff0;
-    max-width: 500px; 
-  }
-
-  .c1 { width: calc(100% - 30px); }
-  .c2 { width: calc(100% - 30px); }
-  .c3 { width: calc(100% - 30px); }
-  .c4 { width: calc(100% - 30px); }
+.nav-item:hover {
+  background: #000;
+  color: #fff;
 }
+
+.logo {
+  height: 165px;
+  position: relative;
+  display: inline-block;
+  margin: 0 30px 30px 0;
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.apple.logo { width: 150px; }
+.nike.logo { width: 320px; }
+.disney.logo { width: 381px; }
+.vogue.logo { width: 330px; }
+
+.apple.logo img { height: 150px; }
+.nike.logo img { height: 115px; }
+.disney.logo img { height: 165px; }
+.vogue.logo img { height: 110px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
