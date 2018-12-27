@@ -1,0 +1,20 @@
+body {
+  background: #ffa;
+  font-size: 30px;
+}
+
+.small {
+  width: 200px;
+}
+
+.medium {
+  width: 400px;
+}
+
+.header {
+  background: #0f0;
+}
+
+.content {
+  background: #B200FF;
+}

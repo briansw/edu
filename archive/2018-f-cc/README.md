@@ -1,4 +1,4 @@
-### Typography and Interaction 2
+### Creative Computing
 
 ---
 
